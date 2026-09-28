@@ -1,0 +1,19 @@
+@startuml
+actor Customer
+participant "MenuScreen" as M
+participant "CartContext" as C
+participant "OrderSummaryScreen" as S
+participant "OrdersContext" as O
+participant "TrackingScreen" as T
+Customer -> M: Tap Add to Cart
+M -> C: dispatch(ADD_ITEM)
+C --> M: Updated cart count
+Customer -> M: Open Cart
+M -> S: Navigate to Order Summary
+Customer -> S: Tap Place Order
+S -> O: dispatch(CREATE)
+O --> S: Order created (Pending)
+S -> T: Navigate with orderId
+T -> O: Timer updates status
+O --> T: Preparing / Ready / Served
+@enduml

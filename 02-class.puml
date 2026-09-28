@@ -1,0 +1,22 @@
+@startuml
+class User { +id: String +name: String +email: String +role: String +login() +logout() }
+class Customer { +browseMenu() +placeOrder() +reserveTable() }
+class Manager { +updateOrderStatus() +updateMenu() }
+class Category { +name: String }
+class MenuItem { +id: String +name: String +price: Number +isSpecial: Boolean +isAvailable: Boolean }
+class Cart { +promoCode: String +discountPercent: Number +addItem() +removeItem() +clear() }
+class CartItem { +quantity: Number +note: String }
+class Order { +id: String +total: Number +type: String +status: String +timestamp: String }
+class Reservation { +id: String +date: String +time: String +partySize: Number +status: String }
+class Table { +id: String +number: Number +seats: Number }
+User <|-- Customer
+User <|-- Manager
+Category "1" o-- "*" MenuItem
+Cart "1" *-- "*" CartItem
+CartItem "*" --> "1" MenuItem
+Customer "1" --> "1" Cart
+Customer "1" --> "*" Order
+Customer "1" --> "*" Reservation
+Reservation "*" --> "1" Table
+Order "1" --> "*" MenuItem
+@enduml

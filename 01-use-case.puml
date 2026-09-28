@@ -1,0 +1,7 @@
+@startuml
+left to right direction
+actor Customer
+actor Manager
+rectangle "Restaurant App MVP" { usecase "Login / Signup" as A; usecase "Browse Menu" as B; usecase "Search / Sort Menu" as C; usecase "Manage Cart" as D; usecase "Apply Promo Code" as E; usecase "Place Order" as F; usecase "Track Order" as G; usecase "Reserve Table" as H; usecase "View Profile / Theme" as I; usecase "Manage Incoming Orders" as J; usecase "Manage Reservations" as K; usecase "Manage Menu" as L; F .> E : <<include>>; F .> D : <<include>>; H .> A : <<include>> }
+Customer --> A; Customer --> B; Customer --> C; Customer --> D; Customer --> E; Customer --> F; Customer --> G; Customer --> H; Customer --> I; Manager --> A; Manager --> J; Manager --> K; Manager --> L
+@enduml

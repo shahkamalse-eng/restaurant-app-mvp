@@ -1,0 +1,2 @@
+digraph G {rankdir=LR; node[shape=box]; Screens[label="Screens
+Login | Menu | Cart | Summary | Reservation | Tracking | Manager | Profile"]; Nav[label="Navigation"]; Auth[label="AuthContext"]; Theme[label="ThemeContext"]; Cart[label="CartContext"]; Orders[label="OrdersContext"]; Menu[label="MenuContext"]; Reducer[label="cartReducer"]; Hooks[label="Custom Hooks"]; Data[label="Mock Data"]; Store[label="AsyncStorage"]; Screens->Nav;Screens->Auth;Screens->Theme;Screens->Cart;Screens->Orders;Screens->Menu;Menu->Hooks;Cart->Reducer;Auth->Data;Menu->Data;Orders->Store;Menu->Store;}

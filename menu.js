@@ -1,0 +1,19 @@
+export const categories=['All','Starters','Mains','Desserts','Drinks'];
+export const menuItems=[
+{id:'m1',name:'Crispy Chicken Bites',description:'Golden chicken bites with herb dip.',price:650,category:'Starters',image:'https://images.unsplash.com/photo-1562967914-608f82629710?w=800',isSpecial:true,isAvailable:true},
+{id:'m2',name:'Loaded Fries',description:'Crispy fries, cheese sauce and herbs.',price:450,category:'Starters',image:'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=800',isSpecial:false,isAvailable:true},
+{id:'m3',name:'Creamy Mushroom Soup',description:'Silky soup with mushrooms and garlic.',price:520,category:'Starters',image:'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800',isSpecial:false,isAvailable:true},
+{id:'m4',name:'Classic Beef Burger',description:'Grilled beef, cheddar, lettuce and sauce.',price:850,category:'Mains',image:'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800',isSpecial:true,isAvailable:true},
+{id:'m5',name:'Chicken Alfredo Pasta',description:'Fettuccine in creamy parmesan sauce.',price:900,category:'Mains',image:'https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=800',isSpecial:false,isAvailable:true},
+{id:'m6',name:'Grilled Chicken Steak',description:'Juicy grilled chicken with vegetables.',price:1050,category:'Mains',image:'https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=800',isSpecial:false,isAvailable:true},
+{id:'m7',name:'Margherita Pizza',description:'Tomato, mozzarella and basil.',price:950,category:'Mains',image:'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800',isSpecial:true,isAvailable:true},
+{id:'m8',name:'Chicken Biryani',description:'Fragrant basmati rice with spiced chicken.',price:750,category:'Mains',image:'https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=800',isSpecial:false,isAvailable:true},
+{id:'m9',name:'Chocolate Lava Cake',description:'Warm chocolate cake with molten center.',price:550,category:'Desserts',image:'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800',isSpecial:true,isAvailable:true},
+{id:'m10',name:'New York Cheesecake',description:'Creamy cheesecake with berry topping.',price:600,category:'Desserts',image:'https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800',isSpecial:false,isAvailable:true},
+{id:'m11',name:'Mango Ice Cream',description:'Fresh mango ice cream scoop.',price:400,category:'Desserts',image:'https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=800',isSpecial:false,isAvailable:true},
+{id:'m12',name:'Fresh Lemonade',description:'Fresh lemon, mint and chilled water.',price:300,category:'Drinks',image:'https://images.unsplash.com/photo-1523677011781-c91d1bbe2f2d?w=800',isSpecial:true,isAvailable:true},
+{id:'m13',name:'Iced Coffee',description:'Cold brew coffee with milk.',price:450,category:'Drinks',image:'https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=800',isSpecial:false,isAvailable:true},
+{id:'m14',name:'Berry Smoothie',description:'Mixed berries blended with yogurt.',price:500,category:'Drinks',image:'https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=800',isSpecial:false,isAvailable:true},
+{id:'m15',name:'Mineral Water',description:'Chilled bottled water.',price:120,category:'Drinks',image:'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=800',isSpecial:false,isAvailable:true}
+];
+export const initialMenu=menuItems;

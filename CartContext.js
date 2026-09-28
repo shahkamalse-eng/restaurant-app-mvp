@@ -1,0 +1,2 @@
+import React,{createContext,useContext,useReducer} from 'react';import {cartReducer,initialCart} from '../reducers/cartReducer';
+const CartContext=createContext(null);export function CartProvider({children}){const[state,dispatch]=useReducer(cartReducer,initialCart);return <CartContext.Provider value={{state,dispatch}}>{children}</CartContext.Provider>}export function useCart(){const c=useContext(CartContext);if(!c)throw new Error('useCart must be used inside CartProvider');return c}

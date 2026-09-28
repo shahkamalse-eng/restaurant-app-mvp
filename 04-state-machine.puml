@@ -1,0 +1,10 @@
+@startuml
+[*] --> Pending : place order
+Pending --> Preparing : 10s demo timer / manager update
+Preparing --> Ready : 20s demo timer / manager update
+Ready --> Served : 30s demo timer / manager update
+Pending --> Cancelled : manager cancels
+Preparing --> Cancelled : manager cancels
+Cancelled --> [*]
+Served --> [*]
+@enduml
